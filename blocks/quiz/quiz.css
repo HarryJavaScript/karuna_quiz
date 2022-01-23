@@ -1,0 +1,167 @@
+
+/* Main picture block */
+.main-picture {
+    display: block;
+  /* right: 0;
+  grid-area: illustration; */
+  background-image: url(../../images/main-illustration.png);
+  width: 544px;
+  min-height: 394px;
+  background-repeat: no-repeat;
+  background-size: unset;
+  grid-area: illustration;
+  justify-self: center;
+  align-self: end;
+}
+
+/* Description block */
+.quiz__section {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr 1fr;
+    /* gap: 16px 96px; */
+    /* grid-auto-flow: row; */
+    grid-template-areas:
+        "main illustration"
+        "like like";
+}
+
+.main-content {
+    grid-area: main;
+    margin: 120px 0 0 40px;
+}
+
+.quiz__pre-title {
+    font-family: "Montserrat", "Arial", "Sans-serif";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-align: left;
+    text-transform: uppercase;
+    color: #487BFE;
+    letter-spacing: 4px;
+}
+
+.quiz__title {
+    font-family: "Montserrat", "Arial", "Sans-serif";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: left;
+    vertical-align: center;
+}
+.quiz__description {
+    font-family: "Montserrat", "Arial", "Sans-serif";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+   
+}
+.quiz__info-subtitle {
+    font-family: "Montserrat", "Arial", "Sans-serif";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    
+}
+.quiz__info {
+    font-family: "Montserrat", "Arial", "Sans-serif";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+   
+}
+.quiz__info-end {
+    font-family: "Montserrat", "Arial", "Sans-serif";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 48px;
+}
+
+
+/* Forward-button block */
+.forward__button {
+    padding: 0;
+    border-width: 0;
+    background-color: #fff;
+}
+
+.forward__link {
+    font-family: "Montserrat", "Arial", "Sans-serif";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    color: #2a2b30;
+    text-align: center;
+    cursor: pointer;
+    width: 256px;
+    min-height: 48px;
+    background: #ffdd3c;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.forward__link:hover .forward__link-pic {
+    transform: translate3d(12px, 0, 0);
+  }
+
+.forward__link-pic {
+    background-image: url(../../../images/arrow.png);
+    width: 18px;
+    height: 14px;
+    margin-left: 11px;
+    transition: ease-in-out 0.4s;
+}
+
+
+/* Like-button block */
+.quiz__like-button {
+    grid-area: like;
+    display: flex;
+    margin-left: 50px;
+    align-self: center;
+}
+
+
+.like-button {
+    background: url(../../../images/like-inactive.svg);
+    height: 32px;
+    width: 32px;
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: visible;
+    background-repeat: no-repeat;
+}
+
+.like-button_active {
+    background: url(../../images/like-active.svg);
+    background-repeat: no-repeat;
+    
+}
+
+.like-button__text {
+    font-family: "Montserrat", "Arial", "Sans-serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #616368;
+    margin-left: 18px;
+}

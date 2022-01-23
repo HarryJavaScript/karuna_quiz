@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>FINANCIAL TEST</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- main page -->
+    <section class="quiz__section">
+
+      <div class="main-content">
+        <span class="quiz__pre-title">useful info</span>
+        <h1 class="quiz__title">It’s tricky, and it’s all about trading</h1>
+        <div class="quiz__description">
+          <span class="quiz__info-subtitle">Pass this test to define your basic financial knowledge.</span>
+          <h3 class="quiz__info">Knowledge is like a muscle: the more you learn, the easier it goes. It’s also a pleasure to know how far you’ve got from the beginning.
+          This test is dedicated to defining the volume of trading knowledge. Do you want to learn your level?</h3>
+          <span class ="quiz__info-end">Let’s go!</span>
+        </div>
+          <div class="forward__button" id="quiz-start__button">
+            <a class="forward__link" target="_self">Let’s go!
+              <span class="forward__link-pic"></span>
+            </a>
+          </div>
+      </div>
+      <!-- main illustration -->
+      <div class="main-picture"></div>
+      <!-- like-button -->
+      <div class="quiz__like-button">
+        <button class="like-button pulse" type="button"></button>
+        <span class="like-button__text">Like</span>
+      </div>
+        
+    </section>
+
+    <!-- question card -->
+    <section class="question-card">
+      <div class="card-container">
+        <span class="question-number"></span>
+        <p class="question-text"></p>
+        <ul class="answer-list">
+          <li class="question-answer" id="a">
+            <span></span>
+          </li>
+          <li class="question-answer" id="b">
+            <span></span>
+          </li>
+          <li class="question-answer" id="c">
+            <span></span>
+          </li>
+        </ul>
+      </div>
+
+      <button class="forward__button" id="next-question__button" type="button" target="_self">
+        <a class="forward__link" href="#" target="_self">Next
+          <span class="forward__link-pic"></span>
+        </a>
+      </button>
+      <div class="quiz__like-button">
+        <button class="like-button pulse" type="button"></button>
+        <span class="like-button__text">Like</span>
+      </div>
+    </section>
+    </div>
+
+    <section class="result-card">
+
+    </section>
+
+  <script src="./scripts/index.js" type="module" defer></script>
+</body>
+
+</html>
