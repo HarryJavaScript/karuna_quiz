@@ -102,7 +102,7 @@ function initialQuiz() {
   answer_B.innerText = currentQuizData.b
   answer_C.innerText = currentQuizData.c
 
-  console.log('У тебя получится!')
+  
   console.log('Произошёл рендер Квиза')
 }
 
